@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>YashJetani | DevOps Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    :root {
+      --bg: #0f172a;
+      --card: #1e293b;
+      --accent: #38bdf8;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --font-main: 'Inter', sans-serif;
+      --font-code: 'Fira Code', monospace;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-main);
+      line-height: 1.6;
+    }
+
+    /* Header */
+    header {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding: 2rem;
+      border-bottom: 1px solid #334155;
+      text-align: center;
+    }
+
+    .profile-pic {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+      border: 4px solid var(--accent);
+      margin-bottom: 1rem;
+      object-fit: cover;
+    }
+
+    .header-content {
+      max-width: 600px;
+      margin-left: 2rem;
+    }
+
+    .header-content h1 {
+      font-size: 2.5rem;
+      margin-bottom: 0.25rem;
+    }
+
+    .typing {
+      font-family: var(--font-code);
+      color: var(--muted);
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      height: 1.2rem;
+    }
+
+    .social-links a {
+      color: var(--accent);
+      text-decoration: none;
+      margin: 0 0.5rem;
+      font-weight: bold;
+    }
+
+    .container {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    section {
+      margin-bottom: 3rem;
+    }
+
+    .card {
+      background-color: var(--card);
+      border-radius: 10px;
+      padding: 1.5rem;
+      margin-top: 1rem;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+    }
+
+    h2 {
+      border-left: 4px solid var(--accent);
+      padding-left: 0.75rem;
+      margin-bottom: 1rem;
+      font-size: 1.5rem;
+    }
+
+    a.btn {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.5rem 1rem;
+      background: var(--accent);
+      color: #0f172a;
+      font-weight: bold;
+      text-decoration: none;
+      border-radius: 6px;
+    }
+
+    footer {
+      text-align: center;
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 2rem 1rem;
+      border-top: 1px solid #334155;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        flex-direction: column;
+      }
+
+      .header-content {
+        margin-left: 0;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="yash.jpeg" alt="Yash Jetani" class="profile-pic" />
+  <div class="header-content">
+    <h1>Yash Jetani</h1>
+    <div class="typing" id="typing-text">DevOps Engineer | Cloud Enthusiast | Linux Lover</div>
+    <div class="social-links">
+      <a href="mailto:yashjetani123@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/yash-jetani" target="_blank">LinkedIn</a>
+      <a href="yash_jetani_resume.pdf" target="_blank">Resume</a>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+
+  <section>
+    <h2>About Me</h2>
+    <div class="card">
+      <p>I’m a DevOps enthusiast driven by automation, scale, and continuous improvement. With hands-on experience in Docker, Jenkins, Terraform, Ansible, Prometheus, Grafana and AWS, I enjoy solving deployment challenges and building resilient systems. Currently pursuing a MCA, I’ve also built a BDMS:Blood-Donation-Management-System as part of my academic journey.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Projects</h2>
+
+   <div class="card">
+  <h3>BDMS: Blood Donation Management System </h3></br>
+  <p>Blood donation has become a very important issue as the need for blood has
+ increased due to the increasing epidemic and thus for any urbanized city.First
+ of all enter the name of the city and then select your blood type so that the
+ people in your surrounding area who want to donate blood.The account of the
+ person who donates blood is closed for 3 months so that no one can get his
+ information After that, the necessary points for a heart or kidney patient were
+ also included in increasing it so that no patient has to be bothered.</p></br>
+  <p><b>Learned:</b> PHP, Bootstrap, MySQL, Git & GitHub, CI/CD automation</p></br>
+       <p><b>GitHub Repo:</b> <a href="https://github.com/YashJetani/Blood-Donation-Management-System.git" target="_blank">BDMS: Blood Donation Management System</a></p>
+
+</div>
+
+    <div class="card">
+  <h3>Monitoring of Containerized Applications</h3></br>
+  <p>A simple 2-tier Notes Application built with Django as the backend and deployed using Docker & Docker Compose.  
+The project is fully automated with Jenkins CI/CD pipeline and monitored using Prometheus, Grafana, and cAdvisor.</p></br>
+  <p><b>Learned:</b> Docker, Jenkins CI/CD pipeline, Prometheus, Grafana, Django</p></br>
+    <p><b>GitHub Repo:</b> <a href="https://github.com/YashJetani/Prometheus-Grafana-Dashboard-with-Docker.git" target="_blank">Monitoring of Containerized Applications</a></p>
+
+</div>
+
+
+
+    <div class="card">
+  <h3>Infrastructure Automation on AWS using Terraform</h3></br>
+  <p>Designed reusable Terraform modules for : VPC,EC2,S3</p></br>
+  <p>Designed and deployed a fully automated cloud infrastructure on AWS using Terraform. Implemented reusable Terraform modules for VPC, EC2, and S3 provisioning while following Infrastructure as Code (IaC) best practices.</p></br>
+  <p><b>Learned:</b> AWS:EC2,VPC,IAM,S3 , AWS CLI, Terraform, </p></br>
+    <p><b>GitHub Repo:</b> <a href="https://github.com/YashJetani/Iac-using-Terraform.git" target="_blank">Infrastructure Automation on AWS using Terraform</a></p>
+
+</div>
+  
+<div class="card">
+  <h3>Multi-env IaC using Terraform and Ansible</h3></br>
+  <p>Developed infrastructure-as-code using Terraform to provision and manage AWS resources such as EC2.</p></br>
+  <p>Developed Ansible inventories for multi-env infrastructure like "dev", "stg", "prd" and simple playbook for install nginx </p></br>
+  <p><b>Learned:</b> Terraform fundamentals, modules </p></br>
+    <p><b>GitHub Repo:</b> <a href="https://github.com/YashJetani/simple-terraform-ansible-multi-env.git" target="_blank">Multi-env IaC using Terraform and Ansible</a></p>
+
+</div>
+
+</div>
+
+  </section>
+
+  <section>
+    <h2>Certifications</h2>
+    <div class="card">
+      <p><strong>DevOps - Zero To Hero (Junoon Batch 8)</strong><br/>
+      <a class="btn" href="https://www.linkedin.com/posts/yash-jetani_devops-certification-cloudcomputing-activity-7313508957354926083-tZga?utm_source=share&utm_medium=member_desktop&rcm=ACoAAD8zPr0BbdfsgVb8O4KD4busJJeZtk5Epz8" target="_blank">Verify Credential</a>
+      </p>
+    </div>
+  </section>
+
+</div>
+
+<footer>
+  &copy; 2025 Yash Jetani — DevOps isn't a tool, it's a mindset.
+</footer>
+
+<script>
+  const texts = [
+    "DevOps Engineer",
+    "Cloud Enthusiast",
+    "Linux Lover",
+    "CI/CD Automator",
+    "Terraform Tinkerer"
+  ];
+  let i = 0, char = 0, dir = 1;
+  const el = document.getElementById("typing-text");
+
+  function typeLoop() {
+    el.textContent = texts[i].substring(0, char);
+    char += dir;
+    if (char === texts[i].length + 1 || char === 0) {
+      dir *= -1;
+      if (dir === 1) i = (i + 1) % texts.length;
+    }
+    setTimeout(typeLoop, dir === 1 ? 100 : 50);
+  }
+  typeLoop();
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
